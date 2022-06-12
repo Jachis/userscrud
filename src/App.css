@@ -1,38 +1,111 @@
 .App {
-  text-align: center;
+  text-align: left;
+  margin: 3rem 8rem 3rem 8rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  backdrop-filter:blur(4px);
+  padding-top: 5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Modal{
+  background: #fff;
+  box-shadow: 2px 2px 8px black;
+  padding: 10px;
+  border-radius: 10px;
+  width: 40%;
+  margin: auto;
+  padding: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.nav{
+  display:flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.nav > h1{
+  font-family: 'Helvetica Neue';
+  font-size: 50px;
+  margin: 0%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.Container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Card {
+  border: solid 1px #e5e5e5;
+  border-radius: 10px;
+  width: 28%;
+  text-align: left;
+  padding: 0rem 1rem 0rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.Card>h1 {
+  font-size: 25px;
+  font-weight: 500;
+  font-family:'Helvetica Neue';
+  line-height: 30.52px;
+  border-bottom: solid 1px #e5e5e5;
+  margin: 0rem;
+  padding: 1.5rem 0rem 1.5rem 0rem;
+}
+
+.Card>span {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'roboto';
+  line-height: 18.75px;
+  color:#D3D3D3;
+  margin-top: 10px;
+}
+
+.Card>p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Helvetica Neue';
+  line-height: 19.09px;
+  margin: 0px;
+  padding-bottom: 10px;
+}
+
+.Btns{
+  text-align: right;
+  border-top: solid 1px #E5E5E5;
+  padding: 1rem;
+}
+
+.btn-delete{
   color: white;
+  background-color: #D85D5D;
+  border: solid 1px #D93F3F;
+  border-radius: 4px;
+  padding: .5rem;
+  margin: .25rem;
+  font-size: 1.25rem;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-edit{
+  color: #D3D3D3;
+  background-color: #F6F6F6;
+  border: solid 1px #BDBDBD;
+  border-radius: 4px;
+  padding: .5rem;
+  margin: .25rem;
+  font-size: 1.25rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-form{
+  background-color: #555A88;
+  border: none;
 }
